@@ -56,8 +56,8 @@ describe("Counter.vue", () => {
                 }
             }
         })
-        const decreaseButton = wrapper.find("#increase-button")
-        await decreaseButton.trigger("click")
+        const increaseButton = wrapper.find("#increase-button")
+        await increaseButton.trigger("click")
         expect(dispatchMock).toBeCalled()
     })
 
